@@ -118,7 +118,7 @@ with tab_sum:
                         - Spending amount: **${int(summary.spending_q1[i])} ~ {int(summary.spending_q3[i])}**\n
                         - Age: **{int(summary.age_q1[i])} ~ {int(summary.age_q3[i])}**\n
                         - Marital status: **{int(summary.married_pr[i]*100)}% are married**\n
-                        - Family size: **{int(summary.num_family_member_q1[i])} ~ {int(summary.num_family_member_q3[i])}**\n
+                        - Family size: **{int(summary.num_family_member_q1[i])+1} ~ {int(summary.num_family_member_q3[i])+1}**\n
                         - Product preference: **{', '.join(product_preference)}**
                         '''
                         )
@@ -130,7 +130,7 @@ with tab_sum:
                         - Spending amount: **${int(summary.spending_q1[i])} ~ {int(summary.spending_q3[i])}**\n
                         - Age: **{int(summary.age_q1[i])} ~ {int(summary.age_q3[i])}**\n
                         - Marital status: **{int(summary.married_pr[i]*100)}% are married**\n
-                        - Family size: **{int(summary.num_family_member_q1[i])} ~ {int(summary.num_family_member_q3[i])}**\n
+                        - Family size: **{int(summary.num_family_member_q1[i])+1} ~ {int(summary.num_family_member_q3[i])+1}**\n
                         - Product preference: **{', '.join(product_preference)}**
                         ''')
     for i, col in enumerate(cols[int(len(summary)/2):]):
@@ -145,7 +145,7 @@ with tab_sum:
                         - Spending amount: **${int(summary.spending_q1[n])} ~ {int(summary.spending_q3[n])}**\n
                         - Age: **{int(summary.age_q1[n])} ~ {int(summary.age_q3[n])}**\n
                         - Marital status: **{int(summary.married_pr[n]*100)}% are married**\n
-                        - Family size: **{int(summary.num_family_member_q1[n])} ~ {int(summary.num_family_member_q3[n])}**\n
+                        - Family size: **{int(summary.num_family_member_q1[n])+1} ~ {int(summary.num_family_member_q3[n])+1}**\n
                         - Product preference: **{', '.join(product_preference)}**
                         ''')
             else:
@@ -156,7 +156,7 @@ with tab_sum:
                         - Spending amount: **${int(summary.spending_q1[n])} ~ {int(summary.spending_q3[n])}**\n
                         - Age: **{int(summary.age_q1[n])} ~ {int(summary.age_q3[n])}**\n
                         - Marital status: **{int(summary.married_pr[n]*100)}% are married**\n
-                        - Family size: **{int(summary.num_family_member_q1[n])} ~ {int(summary.num_family_member_q3[n])}**\n
+                        - Family size: **{int(summary.num_family_member_q1[n])+1} ~ {int(summary.num_family_member_q3[n])+1}**\n
                         - Product preference: **{', '.join(product_preference)}**
                         ''')
 
