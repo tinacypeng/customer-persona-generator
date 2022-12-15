@@ -8,10 +8,10 @@ Hi, I am Chi-Yuan (Tina) Peng. And this is my capstone project. 🤗
 In this capstone project, I want to design a persona generator that can automatically generate the persona and summary report of the customer segmentation. The persona generator can reduce the time and effort people need to spend on reading the customer segmentation report. Also, it allows the sales, marketing, and product design teams have a deeper understanding of who they are selling to and designing for,  why, and how their customers buy and use the products.
 
 ## Background
-#### What is customer segmentation ? 
+### What is customer segmentation ? 
 According to [Garner](https://www.gartner.com/en/sales/glossary/customer-segmentation), **customer segmentation** is a process of analyzing customers' buying behavior and clustering customers into groups. It helps companies get more understanding of their customers of why and how they buy products. And the segment analysis can help and benefit the company by providing potential marketing and sales strategies for their customer groups.
 
-#### What is persona ?
+### What is persona ?
 "User personas are archetypical users whose goals and characteristics represent the needs of a larger group of users," according to [Adobe Xd](https://xd.adobe.com/ideas/process/user-research/putting-personas-to-work-in-ux-design/). **Persona** is usually a one to two pages profile to describe what kind of person your user or customer is. It usually includes a name, age, gender, habits, personality, product preference, and other background information. It helps product designers, sales, and marketing teams to have a deeper understanding of who they are designing for or selling to. With this better understanding of the target audiences or customers, it is more likely to create a product, provide the service, or make a successful marketing strategy that fulfills customer needs and improves sales.
 
 ## Objectives
@@ -24,13 +24,13 @@ These are the variables that I will focus on in this project.
 ![variables](/pics/focus_variables.png "focus variables")
 
 ## Data Preprocessing
-#### Data cleaning
+### Data cleaning
 1. Missing values:
 	There are totally 2,240 observations inside this dataset. And there are only 24 missing data of the `income` column, so I will remove those missing data.
 2. Outliers:
 	Removed 1 observation whose annual income is over 500,000.
 
-#### Create new columns
+### Create new columns
 1. `edu_level` : 
 	- This column is create from `Education` column, which stands for the education qualification of a customer, and includes 5 types of education qualification: Graduation, 2n Cycle, Basic, PhD, and Master. 
 	- I will relabel these types into numbers from 1 to 3 to show the education levels:
@@ -64,9 +64,9 @@ Output: cleaned_data.csv
 ```
 ## Modeling
 For customer segmentation, our goal is to cluster our customers into groups according to their feature behaviors. Therefore, I will use the unsupervised learning model - **KMeans** to make the clusters.
-#### Standard Scale
+### Standard Scale
 Before building the model, we need to use **Standard Scale** to remove the mean and scales of each variable to unit variance to make sure our variables are under the same scale.
-#### Choose the k (number of clusters)
+### Choose the k (number of clusters)
 Then, I used **inertia score** and **silhouette score** to tell which k (number of clusters) is optimal for this dataset. And I found that both of them didn't show the best number of k for me. Thus, I decided to add another step, **PCA**, before making the KMeans. PCA helps me to reduce the features and only focus on the main combining features I will need to use in the model.
 
 And after the PCA process, the **inertia score** and **silhouette score** show that the optimal k is 4. Thus, I then used KMeans with **k = 4** to cluster the customers in this dataset into four groups. And I labeled them group A, B, C, and D.
@@ -77,7 +77,6 @@ Input: cleaned_data.csv
 Output: labeled_result.csv
 ```
 ## Segment Analysis
-#### Segment Analysis
 After grouping customers into four groups, we can start to analyze what features each group has and generate some insights from it.
 
 This is the analysis report from my customer segmentation:
@@ -91,7 +90,7 @@ Input: labeled_result.csv
 Output: summary_result.csv
 ```
 ## Persona Generator
-#### Persona draft and introduction
+### Persona draft and introduction
 This is my persona draft:
 ![persona draft](/pics/persona_draft.png "This is my persona draft")
 - Name:
@@ -118,7 +117,7 @@ This is my persona draft:
 
 	\***Note**: The range of age, income, family size, and the number of kids are based on the 25th and 75th percentile of the group.
 
-#### Display the Persona via [Streamlit](https://streamlit.io/)
+### Display the Persona via [Streamlit](https://streamlit.io/)
 To fulfill this program and display the persona, I use wrote the whole python code in the `app.py` file and display it on Streamlit. 
 
 Below is what the customer persona generator page looks like:
