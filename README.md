@@ -1,13 +1,10 @@
 ﻿# Capstone Project - Customer Persona Generator
-- Author: _Chi-Yuan (Tina) Peng_
-- Date: _Dec. 2022_
+- Author: Chi-Yuan (Tina) Peng
+- Date: Dec. 2022
 
 ## Introduction
 Hi, I am Chi-Yuan (Tina) Peng. And this is my capstone project. 🤗
-
-
-
-
+In this capstone project, I want to design a persona generator that can automatically generate the persona and summary report of the customer segmentation. The persona generator can reduce the time and effort people need to spend on reading the customer segmentation report. Also, it allows the sales, marketing, and product design teams have a deeper understanding of who they are selling to and designing for,  why, and how their customers buy and use the products.
 
 ## Background
 #### What is customer segmentation ? 
@@ -120,7 +117,7 @@ This is my persona draft:
 
 	\***Note**: The range of age, income, family size, and the number of kids are based on the 25th and 75th percentile of the group.
 
-#### Make it via [Streamlit](https://streamlit.io/)
+#### Display the Persona via [Streamlit](https://streamlit.io/)
 To fulfill this program and display the persona, I use wrote the whole python code in the `app.py` file and display it on Streamlit. 
 
 Below is what the customer persona generator page looks like:
@@ -131,9 +128,6 @@ File: app.py, web_scraping_name.ipynb
 Input: summary_result.csv, name_list.csv
 Output: customer persona generator streamlit page
 ```
-## Conclusion
-
-
 
 ## Citations
 - [Kaggle customer segmentation clustering data](https://www.kaggle.com/code/karnikakapoor/customer-segmentation-clustering/data)
@@ -148,9 +142,9 @@ Output: customer persona generator streamlit page
 
 ---
 #### Hashtags
-`#persona` `#customer segmentation` `#persona generator` 
-`#machine learning` `#unsupervise learning` `#clustering` `#KMeans` `#PCA` `#standard scaler` `#web scraping` 
-`#python` `#streamlit` `#html` `#avatar generator` 
+`#persona` `#customer_segmentation` `#persona_generator` 
+`#machine_learning` `#unsupervise_learning` `#clustering` `#KMeans` `#PCA` `#standard_scaler` `#web_scraping` 
+`#python` `#streamlit` `#html` `#avatar_generator` 
 
 
 
