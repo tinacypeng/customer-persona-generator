@@ -4,6 +4,7 @@
 
 ## Introduction
 Hi, I am Chi-Yuan (Tina) Peng. And this is my capstone project. 🤗
+
 In this capstone project, I want to design a persona generator that can automatically generate the persona and summary report of the customer segmentation. The persona generator can reduce the time and effort people need to spend on reading the customer segmentation report. Also, it allows the sales, marketing, and product design teams have a deeper understanding of who they are selling to and designing for,  why, and how their customers buy and use the products.
 
 ## Background
