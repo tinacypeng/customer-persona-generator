@@ -1,4 +1,4 @@
-﻿# Capstone Project - Customer Persona Generator
+﻿# Tina's Capstone Project - Customer Persona Generator
 - Author: Chi-Yuan (Tina) Peng
 - Date: Dec. 2022
 
